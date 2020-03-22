@@ -8,6 +8,7 @@
 
 import Foundation
 
+/*
 struct Group: Identifiable {
     let id: String
     let name: String
@@ -24,3 +25,4 @@ let appSampleData = [
     Group(id: "g1", name: "Work", members: [Person(id: "p1", name: "P1", notes: "n1"), Person(id: "p2", name: "P2", notes: "n2")]),
     Group(id: "g2", name: "Gym", members: [Person(id: "p3", name: "P3", notes: "n3")]),
 ]
+*/

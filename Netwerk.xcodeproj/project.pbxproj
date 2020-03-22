@@ -17,6 +17,8 @@
 		1A80631B2426EAE400AC71D9 /* NetwerkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80631A2426EAE400AC71D9 /* NetwerkTests.swift */; };
 		1A80632F2426F70400AC71D9 /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80632E2426F70400AC71D9 /* GroupListView.swift */; };
 		1A8063332426F77100AC71D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063322426F77100AC71D9 /* Model.swift */; };
+		1A8063382426FCEB00AC71D9 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063342426FCEB00AC71D9 /* Group.swift */; };
+		1A80633A2426FCEB00AC71D9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063362426FCEB00AC71D9 /* Person.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		1A80631C2426EAE400AC71D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A80632E2426F70400AC71D9 /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
 		1A8063322426F77100AC71D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		1A8063342426FCEB00AC71D9 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		1A8063362426FCEB00AC71D9 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +155,8 @@
 		1A8063312426F74800AC71D9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1A8063342426FCEB00AC71D9 /* Group.swift */,
+				1A8063362426FCEB00AC71D9 /* Person.swift */,
 				1A8063322426F77100AC71D9 /* Model.swift */,
 			);
 			path = Model;
@@ -260,6 +266,8 @@
 				1A8063012426EAE100AC71D9 /* AppDelegate.swift in Sources */,
 				1A8063082426EAE100AC71D9 /* ContentView.swift in Sources */,
 				1A80632F2426F70400AC71D9 /* GroupListView.swift in Sources */,
+				1A8063382426FCEB00AC71D9 /* Group.swift in Sources */,
+				1A80633A2426FCEB00AC71D9 /* Person.swift in Sources */,
 				1A8063332426F77100AC71D9 /* Model.swift in Sources */,
 				1A8063062426EAE100AC71D9 /* Netwerk.xcdatamodeld in Sources */,
 				1A8063032426EAE100AC71D9 /* SceneDelegate.swift in Sources */,
