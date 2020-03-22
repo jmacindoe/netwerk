@@ -81,14 +81,13 @@
 		1A8062FF2426EAE100AC71D9 /* Netwerk */ = {
 			isa = PBXGroup;
 			children = (
-				1A8063002426EAE100AC71D9 /* AppDelegate.swift */,
-				1A8063022426EAE100AC71D9 /* SceneDelegate.swift */,
-				1A8063072426EAE100AC71D9 /* ContentView.swift */,
-				1A8063092426EAE300AC71D9 /* Assets.xcassets */,
-				1A80630E2426EAE300AC71D9 /* LaunchScreen.storyboard */,
-				1A8063112426EAE300AC71D9 /* Info.plist */,
-				1A8063042426EAE100AC71D9 /* Netwerk.xcdatamodeld */,
 				1A80630B2426EAE300AC71D9 /* Preview Content */,
+				1A8063252426EC7300AC71D9 /* System */,
+				1A8063092426EAE300AC71D9 /* Assets.xcassets */,
+				1A8063072426EAE100AC71D9 /* ContentView.swift */,
+				1A8063112426EAE300AC71D9 /* Info.plist */,
+				1A80630E2426EAE300AC71D9 /* LaunchScreen.storyboard */,
+				1A8063042426EAE100AC71D9 /* Netwerk.xcdatamodeld */,
 			);
 			path = Netwerk;
 			sourceTree = "<group>";
@@ -104,10 +103,19 @@
 		1A8063192426EAE400AC71D9 /* NetwerkTests */ = {
 			isa = PBXGroup;
 			children = (
-				1A80631A2426EAE400AC71D9 /* NetwerkTests.swift */,
 				1A80631C2426EAE400AC71D9 /* Info.plist */,
+				1A80631A2426EAE400AC71D9 /* NetwerkTests.swift */,
 			);
 			path = NetwerkTests;
+			sourceTree = "<group>";
+		};
+		1A8063252426EC7300AC71D9 /* System */ = {
+			isa = PBXGroup;
+			children = (
+				1A8063002426EAE100AC71D9 /* AppDelegate.swift */,
+				1A8063022426EAE100AC71D9 /* SceneDelegate.swift */,
+			);
+			path = System;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,9 +199,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A80630A2426EAE300AC71D9 /* Assets.xcassets in Resources */,
 				1A8063102426EAE300AC71D9 /* LaunchScreen.storyboard in Resources */,
 				1A80630D2426EAE300AC71D9 /* Preview Assets.xcassets in Resources */,
-				1A80630A2426EAE300AC71D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +220,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A8063012426EAE100AC71D9 /* AppDelegate.swift in Sources */,
-				1A8063062426EAE100AC71D9 /* Netwerk.xcdatamodeld in Sources */,
 				1A8063082426EAE100AC71D9 /* ContentView.swift in Sources */,
+				1A8063062426EAE100AC71D9 /* Netwerk.xcdatamodeld in Sources */,
 				1A8063032426EAE100AC71D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
