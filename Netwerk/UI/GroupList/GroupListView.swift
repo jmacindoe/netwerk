@@ -41,6 +41,6 @@ struct GroupListView: View {
 
 struct GroupListView_Previews: PreviewProvider {
     static var previews: some View {
-        GroupListView()
+        GroupListView().environmentObject(AppState())
     }
 }
