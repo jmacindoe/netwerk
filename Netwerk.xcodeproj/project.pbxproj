@@ -17,6 +17,7 @@
 		1A80632F2426F70400AC71D9 /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80632E2426F70400AC71D9 /* GroupListView.swift */; };
 		1A8063332426F77100AC71D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063322426F77100AC71D9 /* Model.swift */; };
 		1A80633D2427286B00AC71D9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80633C2427286B00AC71D9 /* AppState.swift */; };
+		1A80634024272FD600AC71D9 /* PersonEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80633F24272FD600AC71D9 /* PersonEditorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		1A80632E2426F70400AC71D9 /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
 		1A8063322426F77100AC71D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1A80633C2427286B00AC71D9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		1A80633F24272FD600AC71D9 /* PersonEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				1A80632B2426F61100AC71D9 /* GroupList */,
+				1A80633E24272FA600AC71D9 /* PersonEditor */,
 				1A8063072426EAE100AC71D9 /* ContentView.swift */,
 			);
 			path = UI;
@@ -150,10 +153,18 @@
 		1A8063312426F74800AC71D9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1A8063322426F77100AC71D9 /* Model.swift */,
 				1A80633C2427286B00AC71D9 /* AppState.swift */,
+				1A8063322426F77100AC71D9 /* Model.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1A80633E24272FA600AC71D9 /* PersonEditor */ = {
+			isa = PBXGroup;
+			children = (
+				1A80633F24272FD600AC71D9 /* PersonEditorView.swift */,
+			);
+			path = PersonEditor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,10 +269,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A8063012426EAE100AC71D9 /* AppDelegate.swift in Sources */,
-				1A8063082426EAE100AC71D9 /* ContentView.swift in Sources */,
 				1A80633D2427286B00AC71D9 /* AppState.swift in Sources */,
+				1A8063082426EAE100AC71D9 /* ContentView.swift in Sources */,
 				1A80632F2426F70400AC71D9 /* GroupListView.swift in Sources */,
 				1A8063332426F77100AC71D9 /* Model.swift in Sources */,
+				1A80634024272FD600AC71D9 /* PersonEditorView.swift in Sources */,
 				1A8063032426EAE100AC71D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

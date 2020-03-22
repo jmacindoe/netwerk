@@ -12,6 +12,7 @@ import CoreData
 struct GroupListView: View {
 
     @EnvironmentObject var state: AppState
+    @State var addPersonSheetIsShowing = false
 
     var body: some View {
         NavigationView {
@@ -27,14 +28,12 @@ struct GroupListView: View {
             .navigationBarTitle("Groups")
             .navigationBarItems(trailing:
                 Button(action: {
-                    let person = Person(id: UUID(), name: "P1", notes: "n1")
-                    let group = Group(id: UUID(), name: "Work", members: [])
-                    self.state.addGroup(group)
-                    self.state.addPerson(person, into: group.id)
+                    self.addPersonSheetIsShowing.toggle()
                 }) {
                     Image(systemName: "plus")
-                }
-            )
+                }.sheet(isPresented: $addPersonSheetIsShowing) {
+                    PersonEditorView().environmentObject(self.state)
+                })
         }
     }
 }
