@@ -6,10 +6,11 @@
 //  Copyright © 2020 James Macindoe. All rights reserved.
 //
 
+import Foundation
 import SwiftUI
 
 class AppState: ObservableObject {
-    @Published var groups = [Group]()
+    @Published var groups: [Group] = sampleData
 
     func addGroup(_ group: Group) {
         groups.append(group)
@@ -23,3 +24,20 @@ class AppState: ObservableObject {
         groups[groupIndex].members.append(person)
     }
 }
+
+fileprivate let sampleData = [
+    Group(id: UUID(),
+          name: "Gym",
+          members: [
+            Person(id: UUID(), name: "Arnie", notes: ""),
+            Person(id: UUID(), name: "Zyzz", notes: ""),
+        ]
+    ),
+    Group(id: UUID(),
+          name: "Work",
+          members: [
+            Person(id: UUID(), name: "Uncle Bob", notes: "i luv TDD"),
+            Person(id: UUID(), name: "Aunty Alice", notes: ""),
+            Person(id: UUID(), name: "Mr Gates", notes: "I swear I'm an alright guy!")
+    ])
+]
