@@ -18,6 +18,7 @@
 		1A8063332426F77100AC71D9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063322426F77100AC71D9 /* Model.swift */; };
 		1A80633D2427286B00AC71D9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80633C2427286B00AC71D9 /* AppState.swift */; };
 		1A80634024272FD600AC71D9 /* PersonEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80633F24272FD600AC71D9 /* PersonEditorView.swift */; };
+		1A806343242745D400AC71D9 /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A806342242745D400AC71D9 /* AddGroupView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		1A8063322426F77100AC71D9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		1A80633C2427286B00AC71D9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		1A80633F24272FD600AC71D9 /* PersonEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditorView.swift; sourceTree = "<group>"; };
+		1A806342242745D400AC71D9 /* AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		1A80632A2426F5F800AC71D9 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1A806341242745C000AC71D9 /* AddGroup */,
 				1A80632B2426F61100AC71D9 /* GroupList */,
 				1A80633E24272FA600AC71D9 /* PersonEditor */,
 				1A8063072426EAE100AC71D9 /* ContentView.swift */,
@@ -165,6 +168,14 @@
 				1A80633F24272FD600AC71D9 /* PersonEditorView.swift */,
 			);
 			path = PersonEditor;
+			sourceTree = "<group>";
+		};
+		1A806341242745C000AC71D9 /* AddGroup */ = {
+			isa = PBXGroup;
+			children = (
+				1A806342242745D400AC71D9 /* AddGroupView.swift */,
+			);
+			path = AddGroup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -268,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A806343242745D400AC71D9 /* AddGroupView.swift in Sources */,
 				1A8063012426EAE100AC71D9 /* AppDelegate.swift in Sources */,
 				1A80633D2427286B00AC71D9 /* AppState.swift in Sources */,
 				1A8063082426EAE100AC71D9 /* ContentView.swift in Sources */,

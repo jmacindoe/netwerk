@@ -26,8 +26,8 @@ struct PersonEditorView: View {
                         TextField("John Smith", text: $name)
                     }
                     Picker(selection: $group, label: Text("Group")) {
-                        ForEach(self.state.groups) { group in
-                            Text(group.name)
+                        ForEach(0..<self.state.groups.count, id: \.self) { index in
+                            Text(self.state.groups[index].name).tag(index)
                         }
                     }
                     HStack {
@@ -37,8 +37,8 @@ struct PersonEditorView: View {
                             self.showingAddGroupSheet.toggle()
                         }) {
                             Text("Add Group")
-                        }.sheet(isPresented: $showingAddGroupSheet) {
-                            Text("Add group form")
+                        }.sheet(isPresented: self.$showingAddGroupSheet) {
+                            AddGroupView(createdGroupIndex: self.$group).environmentObject(self.state)
                         }
                     }
                     HStack {
@@ -56,9 +56,8 @@ struct PersonEditorView: View {
                 }) {
                     Text("Cancel")
                 }, trailing: Button(action: {
+                    let group = self.state.groups[self.group]
                     let person = Person(id: UUID(), name: self.name, notes: self.notes)
-                    let group = Group(id: UUID(), name: "Work", members: [])
-                    self.state.addGroup(group)
                     self.state.addPerson(person, into: group.id)
                     self.presentationMode.wrappedValue.dismiss()
                 }) {
