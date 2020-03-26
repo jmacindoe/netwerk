@@ -20,7 +20,9 @@ struct GroupListView: View {
                 ForEach(self.state.groups) { group in
                     Section(header: Text(group.name)) {
                         ForEach(group.members) { person in
-                            Text(person.name)
+                            NavigationLink(destination: EditPersonView(person: person, self.state)) {
+                                Text(person.name)
+                            }
                         }
                     }
                 }
@@ -32,7 +34,7 @@ struct GroupListView: View {
                 }) {
                     Image(systemName: "plus")
                 }.sheet(isPresented: $addPersonSheetIsShowing) {
-                    PersonEditorView().environmentObject(self.state)
+                    AddPersonView().environmentObject(self.state)
                 })
         }
     }

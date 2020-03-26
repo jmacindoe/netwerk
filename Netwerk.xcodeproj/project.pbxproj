@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A05ACE3242C5DD800F4934E /* NameFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05ACE2242C5DD800F4934E /* NameFieldView.swift */; };
+		1A05ACE5242C5DEB00F4934E /* GroupPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05ACE4242C5DEB00F4934E /* GroupPickerView.swift */; };
+		1A05ACE7242C5E0100F4934E /* AddGroupButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05ACE6242C5E0100F4934E /* AddGroupButton.swift */; };
+		1A05ACE9242C5E1300F4934E /* NotesFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05ACE8242C5E1300F4934E /* NotesFieldView.swift */; };
 		1A8063012426EAE100AC71D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063002426EAE100AC71D9 /* AppDelegate.swift */; };
 		1A8063032426EAE100AC71D9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063022426EAE100AC71D9 /* SceneDelegate.swift */; };
 		1A8063082426EAE100AC71D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A8063072426EAE100AC71D9 /* ContentView.swift */; };
@@ -16,10 +20,14 @@
 		1A80631B2426EAE400AC71D9 /* NetwerkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80631A2426EAE400AC71D9 /* NetwerkTests.swift */; };
 		1A80632F2426F70400AC71D9 /* GroupListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80632E2426F70400AC71D9 /* GroupListView.swift */; };
 		1A80633D2427286B00AC71D9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80633C2427286B00AC71D9 /* AppState.swift */; };
-		1A80634024272FD600AC71D9 /* PersonEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80633F24272FD600AC71D9 /* PersonEditorView.swift */; };
+		1A80634024272FD600AC71D9 /* PersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A80633F24272FD600AC71D9 /* PersonView.swift */; };
 		1A806343242745D400AC71D9 /* AddGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A806342242745D400AC71D9 /* AddGroupView.swift */; };
 		1A85BECF24286ABA0026E71D /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BECE24286ABA0026E71D /* Group.swift */; };
 		1A85BED124286AC20026E71D /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BED024286AC20026E71D /* Person.swift */; };
+		1A85BED7242871190026E71D /* AddPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BED6242871190026E71D /* AddPersonView.swift */; };
+		1A85BED92428714B0026E71D /* EditPersonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BED82428714B0026E71D /* EditPersonView.swift */; };
+		1A85BEDD2429812B0026E71D /* AddPersonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BEDC2429812B0026E71D /* AddPersonState.swift */; };
+		1A85BEDF242989770026E71D /* EditPersonState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A85BEDE242989770026E71D /* EditPersonState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +41,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A05ACE2242C5DD800F4934E /* NameFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NameFieldView.swift; sourceTree = "<group>"; };
+		1A05ACE4242C5DEB00F4934E /* GroupPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupPickerView.swift; sourceTree = "<group>"; };
+		1A05ACE6242C5E0100F4934E /* AddGroupButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupButton.swift; sourceTree = "<group>"; };
+		1A05ACE8242C5E1300F4934E /* NotesFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesFieldView.swift; sourceTree = "<group>"; };
 		1A8062FD2426EAE100AC71D9 /* Netwerk.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Netwerk.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A8063002426EAE100AC71D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A8063022426EAE100AC71D9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,10 +58,14 @@
 		1A80631C2426EAE400AC71D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A80632E2426F70400AC71D9 /* GroupListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupListView.swift; sourceTree = "<group>"; };
 		1A80633C2427286B00AC71D9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
-		1A80633F24272FD600AC71D9 /* PersonEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonEditorView.swift; sourceTree = "<group>"; };
+		1A80633F24272FD600AC71D9 /* PersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonView.swift; sourceTree = "<group>"; };
 		1A806342242745D400AC71D9 /* AddGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddGroupView.swift; sourceTree = "<group>"; };
 		1A85BECE24286ABA0026E71D /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
 		1A85BED024286AC20026E71D /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		1A85BED6242871190026E71D /* AddPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonView.swift; sourceTree = "<group>"; };
+		1A85BED82428714B0026E71D /* EditPersonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonView.swift; sourceTree = "<group>"; };
+		1A85BEDC2429812B0026E71D /* AddPersonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPersonState.swift; sourceTree = "<group>"; };
+		1A85BEDE242989770026E71D /* EditPersonState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditPersonState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +86,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A05ACE1242C5DBD00F4934E /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				1A05ACE6242C5E0100F4934E /* AddGroupButton.swift */,
+				1A05ACE4242C5DEB00F4934E /* GroupPickerView.swift */,
+				1A05ACE2242C5DD800F4934E /* NameFieldView.swift */,
+				1A05ACE8242C5E1300F4934E /* NotesFieldView.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
 		1A8062F42426EAE100AC71D9 = {
 			isa = PBXGroup;
 			children = (
@@ -133,7 +160,8 @@
 			children = (
 				1A806341242745C000AC71D9 /* AddGroup */,
 				1A80632B2426F61100AC71D9 /* GroupList */,
-				1A80633E24272FA600AC71D9 /* PersonEditor */,
+				1A80633E24272FA600AC71D9 /* Person */,
+				1A80633C2427286B00AC71D9 /* AppState.swift */,
 				1A8063072426EAE100AC71D9 /* ContentView.swift */,
 			);
 			path = UI;
@@ -150,27 +178,23 @@
 		1A8063302426F73F00AC71D9 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				1A8063312426F74800AC71D9 /* Model */,
+				1A85BECE24286ABA0026E71D /* Group.swift */,
+				1A85BED024286AC20026E71D /* Person.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
 		};
-		1A8063312426F74800AC71D9 /* Model */ = {
+		1A80633E24272FA600AC71D9 /* Person */ = {
 			isa = PBXGroup;
 			children = (
-				1A80633C2427286B00AC71D9 /* AppState.swift */,
-				1A85BECE24286ABA0026E71D /* Group.swift */,
-				1A85BED024286AC20026E71D /* Person.swift */,
+				1A05ACE1242C5DBD00F4934E /* Form */,
+				1A85BEDC2429812B0026E71D /* AddPersonState.swift */,
+				1A85BED6242871190026E71D /* AddPersonView.swift */,
+				1A85BEDE242989770026E71D /* EditPersonState.swift */,
+				1A85BED82428714B0026E71D /* EditPersonView.swift */,
+				1A80633F24272FD600AC71D9 /* PersonView.swift */,
 			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		1A80633E24272FA600AC71D9 /* PersonEditor */ = {
-			isa = PBXGroup;
-			children = (
-				1A80633F24272FD600AC71D9 /* PersonEditorView.swift */,
-			);
-			path = PersonEditor;
+			path = Person;
 			sourceTree = "<group>";
 		};
 		1A806341242745C000AC71D9 /* AddGroup */ = {
@@ -282,14 +306,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A05ACE7242C5E0100F4934E /* AddGroupButton.swift in Sources */,
 				1A806343242745D400AC71D9 /* AddGroupView.swift in Sources */,
+				1A85BEDD2429812B0026E71D /* AddPersonState.swift in Sources */,
+				1A85BED7242871190026E71D /* AddPersonView.swift in Sources */,
 				1A8063012426EAE100AC71D9 /* AppDelegate.swift in Sources */,
 				1A80633D2427286B00AC71D9 /* AppState.swift in Sources */,
 				1A8063082426EAE100AC71D9 /* ContentView.swift in Sources */,
+				1A85BEDF242989770026E71D /* EditPersonState.swift in Sources */,
+				1A85BED92428714B0026E71D /* EditPersonView.swift in Sources */,
 				1A85BECF24286ABA0026E71D /* Group.swift in Sources */,
 				1A80632F2426F70400AC71D9 /* GroupListView.swift in Sources */,
+				1A05ACE5242C5DEB00F4934E /* GroupPickerView.swift in Sources */,
+				1A05ACE3242C5DD800F4934E /* NameFieldView.swift in Sources */,
+				1A05ACE9242C5E1300F4934E /* NotesFieldView.swift in Sources */,
 				1A85BED124286AC20026E71D /* Person.swift in Sources */,
-				1A80634024272FD600AC71D9 /* PersonEditorView.swift in Sources */,
+				1A80634024272FD600AC71D9 /* PersonView.swift in Sources */,
 				1A8063032426EAE100AC71D9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

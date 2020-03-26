@@ -9,8 +9,10 @@
 import Foundation
 import SwiftUI
 
+// TODO: Move
 class AppState: ObservableObject {
     @Published var groups: [Group] = sampleData
+    //let editor = EditorState()
 
     func addGroup(_ group: Group) {
         groups.append(group)
