@@ -11,7 +11,7 @@ import SwiftUI
 // TODO: ideally we'd use an alert instead of a sheet but SwiftUI alerts don't currently support TextFields
 struct AddGroupView: View {
 
-    @EnvironmentObject var state: AppState
+    @EnvironmentObject var appState: AppState
     @Environment(\.presentationMode) var presentationMode
     @State var name = ""
     @Binding var createdGroupIndex: Int
@@ -21,8 +21,8 @@ struct AddGroupView: View {
             TextField("Group name", text: $name)
             Button(action: {
                 let group = Group(id: UUID(), name: self.name, members: [])
-                self.state.addGroup(group)
-                self.createdGroupIndex = self.state.groups.count - 1
+                self.appState.addGroup(group)
+                self.createdGroupIndex = self.appState.groups.count - 1
                 self.presentationMode.wrappedValue.dismiss()
             }) {
                 Text("Done")

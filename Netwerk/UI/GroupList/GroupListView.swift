@@ -10,17 +10,16 @@ import SwiftUI
 import CoreData
 
 struct GroupListView: View {
-
-    @EnvironmentObject var state: AppState
+    @EnvironmentObject var appState: AppState
     @State var addPersonSheetIsShowing = false
 
     var body: some View {
         NavigationView {
             List {
-                ForEach(self.state.groups) { group in
+                ForEach(self.appState.groups) { group in
                     Section(header: Text(group.name)) {
                         ForEach(group.members) { person in
-                            NavigationLink(destination: EditPersonView(person: person, self.state)) {
+                            NavigationLink(destination: EditPersonView(person: person, self.appState)) {
                                 Text(person.name)
                             }
                         }
@@ -34,7 +33,7 @@ struct GroupListView: View {
                 }) {
                     Image(systemName: "plus")
                 }.sheet(isPresented: $addPersonSheetIsShowing) {
-                    AddPersonView().environmentObject(self.state)
+                    AddPersonView().environmentObject(self.appState)
                 })
         }
     }

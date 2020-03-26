@@ -10,7 +10,7 @@ import SwiftUI
 
 /// Don't use directly. Use AddPersonView or EditPersonView instead.
 struct PersonView: View {
-    @EnvironmentObject var state: AppState
+    @EnvironmentObject var appState: AppState
     @Binding var name: String
     @Binding var groupIndex: Int
     @Binding var notes: String
@@ -19,7 +19,7 @@ struct PersonView: View {
         VStack {
             Form {
                 NameFieldView(name: self.$name)
-                GroupPickerView(groupIndex: self.$groupIndex, groups: self.state.groups)
+                GroupPickerView(groupIndex: self.$groupIndex, groups: self.appState.groups)
                 AddGroupButton(groupIndex: self.$groupIndex)
                 NotesFieldView(notes: self.$notes)
             }
